@@ -15,7 +15,7 @@ public class MyQueue<T> {
                 e.printStackTrace();
             }
         }
-        var element = queue.poll();
+        T element = queue.poll();
         System.out.println(Thread.currentThread().getName() + " отримано: " + element);
         notifyAll();
         return element;
